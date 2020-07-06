@@ -1,0 +1,45 @@
+Capture information about the project,
+Update information about the project
+deadline changes, provide reason why deadlines change
+keep tract of meeting mintues (add meeting minutes)
+Project stages(e.g foundation complete)
+update information button and finalize Project Button.
+when finalize the project. Completion date and marked as completed
+
+Poised Diagram
+
+
+public void updateProject() {
+		System.out.println("To Update the amount paid, type 1.");
+		System.out.println("To Update the Deadline, type 2.");
+		System.out.println("To Update both the amount paid and deadline, type 3.");
+		Scanner input = new Scanner(System.in);
+		String userInput = input.nextLine();
+		
+		if (userInput == "1") {
+			System.out.println("Please enter new amount Paid");
+			Scanner input1 = new Scanner(System.in);
+			int newAmountPaid = input1.nextInt();
+			amountPaid = newAmountPaid;
+			
+		} else if(userInput == "2") {
+			System.out.println("Please enter new Deadline e.g 'dd-MM-yyyy' format");
+			Scanner input2 = new Scanner(System.in);
+			String newDeadline = input2.nextLine();
+			projectDeadline = newDeadline;
+			
+		} else if (userInput == "3"){
+			System.out.println("Please enter new amount Paid");
+			Scanner input1 = new Scanner(System.in);
+			int newAmountPaid = input1.nextInt();
+			amountPaid = newAmountPaid;
+			
+			System.out.println("Please enter new Deadline e.g 'dd-MM-yyyy' format");
+			Scanner input2 = new Scanner(System.in);
+			String newDeadline = input2.nextLine();
+			projectDeadline = newDeadline;
+			
+			
+		}
+
+	}
